@@ -1,0 +1,22 @@
+main {
+  @apply container;
+  padding-top: 165px;
+  @screen lg {
+    padding-top: 125px;
+  }
+}
+
+nav a::before {
+  @apply absolute;
+  @apply bg-white;
+  content: '';
+  right: 0;
+  bottom: -5px;
+  width: 0px;
+  height: 3px;
+  transition: width 0.2s ease-out;
+}
+
+nav a:hover::before {
+  width: 40px;
+}

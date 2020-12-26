@@ -1,0 +1,38 @@
+.postsList {
+  li {
+    &:not(:last-of-type) {
+      @apply border-b;
+      @apply border-gray-600;
+      @apply mb-8;
+      @apply pb-8;
+    }
+  }
+}
+
+.newPostTitle {
+  @apply w-full;
+
+  @screen lg {
+    width: 500px;
+  }
+}
+
+.frontImage {
+  position: fixed;
+  top: 0;
+  right: -20%;
+  z-index: 0;
+  opacity: 0.3;
+
+  @screen md {
+    right: -10%;
+  }
+
+  @screen lg {
+    position: relative;
+    right: unset;
+    top: unset;
+    opacity: unset;
+    opacity: 0.85;
+  }
+}
