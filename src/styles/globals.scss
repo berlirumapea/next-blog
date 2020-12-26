@@ -6,7 +6,7 @@ main {
   }
 }
 
-nav a::before {
+nav .nav-right a::before {
   @apply absolute;
   @apply bg-white;
   content: '';
