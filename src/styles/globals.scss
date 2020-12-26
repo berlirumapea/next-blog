@@ -17,6 +17,6 @@ nav .nav-right a::before {
   transition: width 0.2s ease-out;
 }
 
-nav a:hover::before {
+nav .nav-right a:hover::before {
   width: 40px;
 }
